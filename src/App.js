@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
-function App() {
+import Home from './views/Home'
+import UserForm from './views/users/UserForm'
+import Users from './views/users/Users'
+import NotFound from './views/errors/NotFound'
+import Posts from './views/posts/Posts'
+import PostForm from './views/posts/PostForm'
+
+const App = () => {
+  const { variant, showAlert, message } = useSelector(state => state.app.alert)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/users">
+          <Users />
+        </Route>
+        <Route exact path="/users/create">
+          <UserForm action="create" />
+        </Route>
+        <Route exact path="/users/:uuid/edit">
+          <UserForm action="edit" />
+        </Route>
+        <Route exact path="/posts">
+          <Posts />
+        </Route>
+        <Route exact path="/posts/create">
+          <PostForm action="create" />
+        </Route>
+        <Route exact path="/posts/:id/edit">
+          <PostForm action="edit" />
+        </Route>
+        <Route exact path="/404-page-not-found">
+          <NotFound />
+        </Route>
+        <Route path="*">
+          <Redirect to="/404-page-not-found" />
+        </Route>
+      </Switch>
+
+      {showAlert && (
+        <div className={`alert ${variant}`}>
+          <p>{message}</p>
+        </div>
+      )}
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

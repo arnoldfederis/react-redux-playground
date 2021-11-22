@@ -1,0 +1,35 @@
+.form {
+  &-field {
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  &-label {
+    margin-bottom: .5rem;
+    font-weight: bold;
+  }
+
+  &-message {
+    position: absolute;
+    right: 0;
+    font-size: .75rem;
+    font-weight: bold;
+  }
+
+  &-control {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border-width: 1px;
+
+    &.is-invalid {
+      outline: #dd3030 solid 1px;
+      border: 0;
+    }
+
+    &-invalid {
+      color: #dd3030;
+    }
+  }
+}

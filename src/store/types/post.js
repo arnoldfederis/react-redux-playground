@@ -1,0 +1,5 @@
+export const CREATE_POST = 'CREATE_POST'
+export const READ_POSTS = 'READ_POSTS'
+export const EDIT_POST = 'EDIT_POST'
+export const UPDATE_POST = 'UPDATE_POST'
+export const DELETE_POST = 'DELETE_POST'

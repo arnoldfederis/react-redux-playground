@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "title": "heheh",
+      "body": "ehehehe",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "title": "weqweqweqwe",
+      "body": "qweqweqwe",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "title": "qweqwe",
+      "body": "wqeqewqewqe",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "title": "qweqweqe",
+      "body": "eqeqweq",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "title": "qweqweq",
+      "body": "weqweqweq",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "title": "sdfsdfsdf",
+      "body": "sdfsdfsfsdfs",
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "title": "sdasdad",
+      "body": "asdasdasdada",
+      "userId": 1,
+      "id": 7
+    }
+  ]
+}
