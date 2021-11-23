@@ -41,6 +41,25 @@
       "body": "asdasdasdada",
       "userId": 1,
       "id": 7
+    },
+    {
+      "title": "qweqweq",
+      "body": "weqweqweqwe",
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "title": "asda",
+      "body": "dasdads",
+      "userId": 1,
+      "id": 9
+    }
+  ],
+  "articles": [
+    {
+      "title": "hello",
+      "body": "world",
+      "id": 1
     }
   ]
 }

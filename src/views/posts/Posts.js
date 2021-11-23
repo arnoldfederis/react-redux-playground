@@ -17,6 +17,7 @@ const Posts = () => {
 
   return (
     <>
+      <Link to={'/'}>Home</Link>
       <div className="card">
         <div className="card-header">
           <h1 className='card-title'>Posts</h1>
