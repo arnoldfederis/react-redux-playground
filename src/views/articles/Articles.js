@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import client from '../../config/client'
 import { FaTrash } from 'react-icons/all'
 
 const Articles = () => {

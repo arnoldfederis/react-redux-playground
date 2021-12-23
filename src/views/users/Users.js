@@ -9,7 +9,7 @@ const Users = () => {
 
   useEffect(() => {
     dispatch(fetchUser())
-  }, [])
+  }, [dispatch])
 
   const onDeleteUser = (id) => {
     dispatch(deleteUser(id))

@@ -9,6 +9,7 @@ import Posts from './views/posts/Posts'
 import PostForm from './views/posts/PostForm'
 import Articles from './views/articles/Articles'
 import ArticleForm from './views/articles/ArticleForm'
+import Weather from './views/weather/Weather'
 
 const App = () => {
   const { variant, showAlert, message } = useSelector(state => state.app.alert)
@@ -45,6 +46,9 @@ const App = () => {
         </Route>
         <Route exact path="/articles/:id/edit">
           <ArticleForm action="edit" />
+        </Route>
+        <Route exact path="/weather">
+          <Weather />
         </Route>
         <Route exact path="/404-page-not-found">
           <NotFound />

@@ -1,6 +1,5 @@
 import { Link, useHistory, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import client from '../../config/client'
 
 const ArticleForm = ({ action }) => {
   const { id } = useParams()
@@ -36,7 +35,7 @@ const ArticleForm = ({ action }) => {
           })
         })
     }
-  }, [])
+  }, [action, id])
 
   const handleChange = (e) => {
     const { name, value } = e.target

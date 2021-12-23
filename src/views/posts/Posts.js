@@ -9,7 +9,7 @@ const Posts = () => {
 
   useEffect(() => {
     dispatch(fetchPost())
-  }, [])
+  }, [dispatch])
 
   const onDeletePost = (id) => {
     dispatch(deletePost(id))

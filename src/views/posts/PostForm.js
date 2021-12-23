@@ -17,7 +17,7 @@ const PostForm = ({ action }) => {
     }
 
     dispatch(fetchSinglePost(id, formikRef))
-  }, [])
+  }, [action, dispatch, id])
 
   const initialValues = {
     title: '',

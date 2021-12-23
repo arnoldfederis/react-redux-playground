@@ -18,7 +18,7 @@ const UserForm = ({ action }) => {
     }
 
     dispatch(fetchSingleUser(uuid, formikRef))
-  }, [])
+  }, [action, dispatch, uuid])
 
   const userForms = [
     {
